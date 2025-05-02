@@ -1,0 +1,30 @@
+{
+    "version": 3,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 21,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "mac-debug",
+            "description": "Configure for macOS with Debug build type",
+            "generator": "Unix Makefiles",
+            "binaryDir": "${workspaceFolder}/build/mac-debug",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "YES"
+            }
+        },
+        {
+            "name": "mac-release",
+            "description": "Configure for macOS with Release build type",
+            "generator": "Unix Makefiles",
+            "binaryDir": "${workspaceFolder}/build/mac-release",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release",
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "YES"
+            }
+        }
+    ]
+}
